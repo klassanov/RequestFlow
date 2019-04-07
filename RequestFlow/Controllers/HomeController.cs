@@ -18,5 +18,11 @@ namespace RequestFlow.Controllers
         {
             return RedirectToAction("Index", "Home");
         }
+
+        public ActionResult Calc(int val = 0)
+        {
+            decimal result = 100 / val;
+            return View(result);
+        }
     }
 }
